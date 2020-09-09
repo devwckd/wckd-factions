@@ -1,7 +1,7 @@
-package me.devwckd.api.plugin.dependency.module;
+package me.devwckd.api.dependency.module;
 
 import lombok.RequiredArgsConstructor;
-import me.devwckd.api.plugin.dependency.DependencyManager;
+import me.devwckd.api.dependency.DependencyManager;
 import org.reflections8.Reflections;
 
 /**

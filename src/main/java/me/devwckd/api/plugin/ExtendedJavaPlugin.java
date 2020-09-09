@@ -1,8 +1,8 @@
 package me.devwckd.api.plugin;
 
-import me.devwckd.api.plugin.dependency.command.CommandManager;
-import me.devwckd.api.plugin.dependency.listener.ListenerManager;
-import me.devwckd.api.plugin.dependency.module.ModuleManager;
+import me.devwckd.api.dependency.command.CommandManager;
+import me.devwckd.api.dependency.listener.ListenerManager;
+import me.devwckd.api.dependency.module.ModuleManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.reflections8.Reflections;
 

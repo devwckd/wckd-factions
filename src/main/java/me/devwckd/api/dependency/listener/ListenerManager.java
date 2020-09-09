@@ -1,8 +1,8 @@
-package me.devwckd.api.plugin.dependency.listener;
+package me.devwckd.api.dependency.listener;
 
 import lombok.RequiredArgsConstructor;
-import me.devwckd.api.plugin.dependency.DependencyManager;
-import me.devwckd.api.plugin.dependency.module.ModuleManager;
+import me.devwckd.api.dependency.DependencyManager;
+import me.devwckd.api.dependency.module.ModuleManager;
 import org.reflections8.Reflections;
 
 /**
