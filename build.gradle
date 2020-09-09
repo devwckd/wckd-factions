@@ -5,6 +5,10 @@ plugins {
 group 'me.devwckd'
 version '1.0-SNAPSHOT'
 
+// Setting JDK version to 1.8
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
 repositories {
     // Central repositories
     mavenCentral()
@@ -15,6 +19,9 @@ repositories {
 }
 
 dependencies {
+    // Reflections8 dependencies
+    implementation "net.oneandone.reflections8:reflections8:0.11.5"
+
     // Spigot dependencies
     compileOnly 'org.spigotmc:spigot-api:1.8.3-R0.1-SNAPSHOT'
 
