@@ -5,5 +5,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 /**
  * @copyright github.com/devwckd
  */
-public class AbstractFactionsPlugin extends JavaPlugin {
+public class ExtendedJavaPlugin extends JavaPlugin {
+
 }
