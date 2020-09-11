@@ -17,6 +17,9 @@ repositories {
     // Spigot repositories
     maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
     maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+
+    // Jitpack repositories
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
