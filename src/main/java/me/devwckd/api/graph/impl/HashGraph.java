@@ -10,17 +10,17 @@ import java.util.concurrent.LinkedBlockingQueue;
  */
 public class HashGraph<T> implements Graph<T> {
 
-    private final HashMap<T, HashSet<T>> vertices = new HashMap<>();
+    private final Map<T, Set<T>> vertices = new HashMap<>();
 
     @Override
     public void addVertex(T vertex, T... edges) {
-        final HashSet<T> edgeSet = getOrCreateEdgeSet(vertex);
+        final Set<T> edgeSet = getOrCreateEdgeSet(vertex);
         edgeSet.addAll(Arrays.asList(edges));
     }
 
     @Override
     public void addEdge(T vertex, T edge) {
-        final HashSet<T> edgeSet = vertices.get(vertex);
+        final Set<T> edgeSet = vertices.get(vertex);
         if(edgeSet == null) return;
 
         edgeSet.add(edge);
@@ -33,7 +33,7 @@ public class HashGraph<T> implements Graph<T> {
 
     @Override
     public void removeEdge(T vertex, T edge) {
-        final HashSet<T> edgeSet = vertices.get(vertex);
+        final Set<T> edgeSet = vertices.get(vertex);
         if(edgeSet == null) return;
 
         edgeSet.remove(edge);
@@ -95,12 +95,29 @@ public class HashGraph<T> implements Graph<T> {
         return visited;
     }
 
-    private HashSet<T> getOrCreateEdgeSet(T vertex) {
+    private Set<T> getOrCreateEdgeSet(T vertex) {
         if(vertices.containsKey(vertex)) return vertices.get(vertex);
 
-        final HashSet<T> edgeSet = new HashSet<>();
+        final Set<T> edgeSet = new HashSet<>();
         vertices.put(vertex, edgeSet);
 
         return edgeSet;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder("\n");
+
+        for (Map.Entry<T, Set<T>> entry : vertices.entrySet()) {
+            stringBuilder.append(entry.getKey()).append("\n");
+
+            for (T t : entry.getValue()) {
+                stringBuilder.append("↳ ").append(t).append("\n");
+            }
+
+            stringBuilder.append("\n");
+        }
+
+        return stringBuilder.toString();
     }
 }
