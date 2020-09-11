@@ -42,7 +42,7 @@ public class ModuleManager implements DependencyManager {
     public void callLoad() {
         for (Map.Entry<Method, Object> load : loadMethods.entrySet()) {
             final Method method = load.getKey();
-            Object[] parameters = referenceManager.resolveMethodParameterReferences(method);
+            Object[] parameters = referenceManager.resolveParameterReferences(method.getParameters());
             invokeMethodAndReturnResult(method, load.getValue(), parameters);
         }
     }
@@ -50,7 +50,7 @@ public class ModuleManager implements DependencyManager {
     public void callEnable() {
         for (Map.Entry<Method, Object> load : enableMethods.entrySet()) {
             final Method method = load.getKey();
-            Object[] parameters = referenceManager.resolveMethodParameterReferences(method);
+            Object[] parameters = referenceManager.resolveParameterReferences(method.getParameters());
             invokeMethodAndReturnResult(method, load.getValue(), parameters);
         }
     }
@@ -61,7 +61,7 @@ public class ModuleManager implements DependencyManager {
 
         for (Map.Entry<Method, Object> load : disableMethodsList) {
             final Method method = load.getKey();
-            Object[] parameters = referenceManager.resolveMethodParameterReferences(method);
+            Object[] parameters = referenceManager.resolveParameterReferences(method.getParameters());
             invokeMethodAndReturnResult(method, load.getValue(), parameters);
         }
     }

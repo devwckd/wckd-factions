@@ -54,7 +54,7 @@ public class ExtendedJavaPlugin extends JavaPlugin {
     @Override
     public final void onEnable() {
         listenerManager.registerListeners();
-        commandManager. registerCommands();
+        commandManager.registerCommands();
 
         moduleManager.callEnable();
         enable();

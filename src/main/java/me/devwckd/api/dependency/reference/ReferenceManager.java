@@ -6,9 +6,7 @@ import me.devwckd.api.dependency.export.Export;
 import me.devwckd.api.dependency.export.Named;
 import me.devwckd.api.dependency.module.Module;
 import me.devwckd.api.plugin.ExtendedJavaPlugin;
-import me.devwckd.api.util.ReflectionUtils;
 
-import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import java.util.*;
@@ -110,10 +108,10 @@ public class ReferenceManager implements DependencyManager {
         return null;
     }
 
-    public Object[] resolveMethodParameterReferences(Method method) {
+    public Object[] resolveParameterReferences(Parameter... parameters) {
         List<Object> parameterReferences = new LinkedList<>();
 
-        for (Parameter parameter : method.getParameters()) {
+        for (Parameter parameter : parameters) {
             final String namedValue;
             if (parameter.isAnnotationPresent(Named.class) &&
               !(namedValue = parameter.getAnnotation(Named.class).value()).equals("")) {
