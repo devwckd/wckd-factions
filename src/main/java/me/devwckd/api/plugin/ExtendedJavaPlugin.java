@@ -39,7 +39,7 @@ public class ExtendedJavaPlugin extends JavaPlugin {
         exportManager = new ExportManager(reflections, referenceManager);
         moduleManager = new ModuleManager(reflections, referenceManager);
         listenerManager = new ListenerManager(this, reflections, referenceManager);
-        commandManager = new CommandManager(reflections, referenceManager);
+        commandManager = new CommandManager(this, reflections, referenceManager);
 
         referenceManager.init();
         exportManager.init();
