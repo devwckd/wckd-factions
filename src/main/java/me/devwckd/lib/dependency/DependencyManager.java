@@ -1,4 +1,4 @@
-package me.devwckd.api.dependency;
+package me.devwckd.lib.dependency;
 
 /**
  * @author devwckd

@@ -1,11 +1,10 @@
-package me.devwckd.api.dependency.command;
+package me.devwckd.lib.dependency.command;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import me.devwckd.api.dependency.DependencyManager;
-import me.devwckd.api.dependency.reference.ReferenceManager;
-import me.devwckd.api.plugin.ExtendedJavaPlugin;
-import me.devwckd.api.util.ReflectionUtils;
+import me.devwckd.lib.dependency.DependencyManager;
+import me.devwckd.lib.dependency.reference.ReferenceManager;
+import me.devwckd.lib.plugin.ExtendedJavaPlugin;
 import me.saiintbrisson.bukkit.command.BukkitFrame;
 import org.reflections8.Reflections;
 
@@ -13,7 +12,7 @@ import java.lang.reflect.Constructor;
 import java.util.HashSet;
 import java.util.Set;
 
-import static me.devwckd.api.util.ReflectionUtils.*;
+import static me.devwckd.lib.util.ReflectionUtils.*;
 
 /**
  * @author devwckd

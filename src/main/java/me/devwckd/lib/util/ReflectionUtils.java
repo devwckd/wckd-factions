@@ -1,4 +1,4 @@
-package me.devwckd.api.util;
+package me.devwckd.lib.util;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

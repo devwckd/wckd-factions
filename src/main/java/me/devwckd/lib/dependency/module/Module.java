@@ -1,4 +1,4 @@
-package me.devwckd.api.dependency.module;
+package me.devwckd.lib.dependency.module;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
  * @author devwckd
  */
 
-@Target(ElementType.METHOD)
+@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface ModuleDisable {
+public @interface Module {
 }

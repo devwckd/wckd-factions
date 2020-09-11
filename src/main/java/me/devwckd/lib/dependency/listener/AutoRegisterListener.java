@@ -1,4 +1,4 @@
-package me.devwckd.api.dependency.command;
+package me.devwckd.lib.dependency.listener;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -11,5 +11,5 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface AutoRegisterCompleter {
+public @interface AutoRegisterListener {
 }

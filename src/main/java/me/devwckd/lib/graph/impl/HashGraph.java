@@ -1,6 +1,6 @@
-package me.devwckd.api.graph.impl;
+package me.devwckd.lib.graph.impl;
 
-import me.devwckd.api.graph.Graph;
+import me.devwckd.lib.graph.Graph;
 
 import java.util.*;
 import java.util.concurrent.LinkedBlockingQueue;

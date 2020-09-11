@@ -1,4 +1,4 @@
-package me.devwckd.api.graph;
+package me.devwckd.lib.graph;
 
 import java.util.LinkedHashSet;
 import java.util.Set;

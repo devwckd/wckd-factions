@@ -1,10 +1,10 @@
-package me.devwckd.api.plugin;
+package me.devwckd.lib.plugin;
 
-import me.devwckd.api.dependency.command.CommandManager;
-import me.devwckd.api.dependency.export.ExportManager;
-import me.devwckd.api.dependency.listener.ListenerManager;
-import me.devwckd.api.dependency.module.ModuleManager;
-import me.devwckd.api.dependency.reference.ReferenceManager;
+import me.devwckd.lib.dependency.command.CommandManager;
+import me.devwckd.lib.dependency.export.ExportManager;
+import me.devwckd.lib.dependency.listener.ListenerManager;
+import me.devwckd.lib.dependency.module.ModuleManager;
+import me.devwckd.lib.dependency.reference.ReferenceManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.reflections8.Reflections;
 import org.reflections8.scanners.MethodAnnotationsScanner;

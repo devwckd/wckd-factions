@@ -1,7 +1,7 @@
 package me.devwckd.factions.listener;
 
 import lombok.RequiredArgsConstructor;
-import me.devwckd.api.dependency.listener.AutoRegisterListener;
+import me.devwckd.lib.dependency.listener.AutoRegisterListener;
 import me.devwckd.factions.FactionsPlugin;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;

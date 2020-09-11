@@ -1,4 +1,4 @@
-package me.devwckd.api.dependency.module;
+package me.devwckd.lib.dependency.export;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -11,5 +11,7 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface ModuleEnable {
+public @interface Export {
+
+    String name() default "";
 }

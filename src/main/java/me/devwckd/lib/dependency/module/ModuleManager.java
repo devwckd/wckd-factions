@@ -1,20 +1,19 @@
-package me.devwckd.api.dependency.module;
+package me.devwckd.lib.dependency.module;
 
 import lombok.RequiredArgsConstructor;
-import me.devwckd.api.dependency.DependencyManager;
-import me.devwckd.api.dependency.export.Named;
-import me.devwckd.api.dependency.reference.ReferenceManager;
-import me.devwckd.api.graph.Graph;
-import me.devwckd.api.graph.impl.HashGraph;
+import me.devwckd.lib.dependency.DependencyManager;
+import me.devwckd.lib.dependency.export.Named;
+import me.devwckd.lib.dependency.reference.ReferenceManager;
+import me.devwckd.lib.graph.Graph;
+import me.devwckd.lib.graph.impl.HashGraph;
 import org.reflections8.Reflections;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import java.util.*;
-import java.util.stream.Collectors;
 
-import static me.devwckd.api.util.ReflectionUtils.*;
+import static me.devwckd.lib.util.ReflectionUtils.*;
 
 /**
  * @author devwckd

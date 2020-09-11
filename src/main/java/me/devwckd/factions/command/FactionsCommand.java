@@ -1,7 +1,7 @@
 package me.devwckd.factions.command;
 
-import me.devwckd.api.dependency.command.AutoRegisterCommand;
-import me.devwckd.api.dependency.command.AutoRegisterCompleter;
+import me.devwckd.lib.dependency.command.AutoRegisterCommand;
+import me.devwckd.lib.dependency.command.AutoRegisterCompleter;
 import me.saiintbrisson.bukkit.command.command.BukkitContext;
 import me.saiintbrisson.minecraft.command.annotation.Command;
 

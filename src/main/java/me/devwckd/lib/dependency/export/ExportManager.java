@@ -1,8 +1,8 @@
-package me.devwckd.api.dependency.export;
+package me.devwckd.lib.dependency.export;
 
 import lombok.RequiredArgsConstructor;
-import me.devwckd.api.dependency.DependencyManager;
-import me.devwckd.api.dependency.reference.ReferenceManager;
+import me.devwckd.lib.dependency.DependencyManager;
+import me.devwckd.lib.dependency.reference.ReferenceManager;
 import org.reflections8.Reflections;
 
 import java.lang.reflect.Method;

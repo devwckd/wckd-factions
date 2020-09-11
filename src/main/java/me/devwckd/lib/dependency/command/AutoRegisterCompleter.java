@@ -1,4 +1,4 @@
-package me.devwckd.api.dependency.export;
+package me.devwckd.lib.dependency.command;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -9,9 +9,7 @@ import java.lang.annotation.Target;
  * @author devwckd
  */
 
-@Target(ElementType.METHOD)
+@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Export {
-
-    String name() default "";
+public @interface AutoRegisterCompleter {
 }

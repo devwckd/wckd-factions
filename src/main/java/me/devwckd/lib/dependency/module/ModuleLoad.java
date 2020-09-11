@@ -1,4 +1,4 @@
-package me.devwckd.api.dependency.module;
+package me.devwckd.lib.dependency.module;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

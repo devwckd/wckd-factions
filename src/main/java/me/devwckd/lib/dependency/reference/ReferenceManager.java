@@ -1,17 +1,17 @@
-package me.devwckd.api.dependency.reference;
+package me.devwckd.lib.dependency.reference;
 
 import lombok.RequiredArgsConstructor;
-import me.devwckd.api.dependency.DependencyManager;
-import me.devwckd.api.dependency.export.Export;
-import me.devwckd.api.dependency.export.Named;
-import me.devwckd.api.dependency.module.Module;
-import me.devwckd.api.plugin.ExtendedJavaPlugin;
+import me.devwckd.lib.dependency.DependencyManager;
+import me.devwckd.lib.dependency.export.Export;
+import me.devwckd.lib.dependency.export.Named;
+import me.devwckd.lib.dependency.module.Module;
+import me.devwckd.lib.plugin.ExtendedJavaPlugin;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import java.util.*;
 
-import static me.devwckd.api.util.ReflectionUtils.*;
+import static me.devwckd.lib.util.ReflectionUtils.*;
 
 /**
  * @author devwckd

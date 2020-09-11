@@ -1,9 +1,9 @@
-package me.devwckd.api.dependency.listener;
+package me.devwckd.lib.dependency.listener;
 
 import lombok.RequiredArgsConstructor;
-import me.devwckd.api.dependency.DependencyManager;
-import me.devwckd.api.dependency.reference.ReferenceManager;
-import me.devwckd.api.plugin.ExtendedJavaPlugin;
+import me.devwckd.lib.dependency.DependencyManager;
+import me.devwckd.lib.dependency.reference.ReferenceManager;
+import me.devwckd.lib.plugin.ExtendedJavaPlugin;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginManager;
 import org.reflections8.Reflections;
@@ -12,7 +12,7 @@ import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.List;
 
-import static me.devwckd.api.util.ReflectionUtils.*;
+import static me.devwckd.lib.util.ReflectionUtils.*;
 
 /**
  * @author devwckd
