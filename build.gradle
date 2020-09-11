@@ -23,6 +23,9 @@ dependencies {
     // Reflections8 dependencies
     implementation "net.oneandone.reflections8:reflections8:0.11.5"
 
+    // SaiintBrisson's command framework dependencies
+    implementation 'com.github.SaiintBrisson.command-framework:bukkit:1.0.0'
+
     // Spigot dependencies
     compileOnly 'org.spigotmc:spigot-api:1.8.3-R0.1-SNAPSHOT'
 
