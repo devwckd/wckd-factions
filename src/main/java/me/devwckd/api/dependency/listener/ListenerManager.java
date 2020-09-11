@@ -4,7 +4,6 @@ import lombok.RequiredArgsConstructor;
 import me.devwckd.api.dependency.DependencyManager;
 import me.devwckd.api.dependency.reference.ReferenceManager;
 import me.devwckd.api.plugin.ExtendedJavaPlugin;
-import me.devwckd.api.util.ReflectionUtils;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.PluginManager;
 import org.reflections8.Reflections;
@@ -30,7 +29,7 @@ public class ListenerManager implements DependencyManager, Listener {
 
     @Override
     public void init() {
-        for (Class<?> listenerClass : reflections.getTypesAnnotatedWith(AutoRegister.class)) {
+        for (Class<?> listenerClass : reflections.getTypesAnnotatedWith(AutoRegisterListener.class)) {
             if(!Listener.class.isAssignableFrom(listenerClass)) continue;
 
             listenerClasses.add(listenerClass);
