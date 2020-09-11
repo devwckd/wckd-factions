@@ -28,7 +28,7 @@ public class CommandManager implements DependencyManager {
     private final ReferenceManager referenceManager;
     private final Set<Class<?>> classes = new HashSet<>();
 
-    private BukkitFrame bukkitFrame;
+    private BukkitFrame commandFramework;
 
     @Override
     public void init() {
@@ -37,7 +37,7 @@ public class CommandManager implements DependencyManager {
     }
 
     public void registerCommands() {
-        bukkitFrame = new BukkitFrame(plugin);
+        commandFramework = new BukkitFrame(plugin);
 
         for (Class<?> clazz : classes) {
             final Object instance;
@@ -52,8 +52,7 @@ public class CommandManager implements DependencyManager {
 
             if (clazz.isAnnotationPresent(AutoRegisterCommand.class) ||
               clazz.isAnnotationPresent(AutoRegisterCompleter.class))
-                bukkitFrame.registerCommands(instance);
-
+                commandFramework.registerCommands(instance);
         }
     }
 
