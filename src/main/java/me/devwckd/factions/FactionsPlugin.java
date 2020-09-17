@@ -1,7 +1,7 @@
 package me.devwckd.factions;
 
-import me.devwckd.lib.dependency.export.Export;
-import me.devwckd.lib.plugin.ExtendedJavaPlugin;
+import me.devwckd.library.common.dependency.export.Export;
+import me.devwckd.library.common.plugin.ExtendedJavaPlugin;
 
 /**
  * @author devwckd

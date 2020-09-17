@@ -29,6 +29,9 @@ dependencies {
     // SaiintBrisson's command framework dependencies
     implementation 'com.github.SaiintBrisson.command-framework:bukkit:1.0.0'
 
+    // Spigot Library Dependencies
+    implementation 'com.github.devwckd.spigot-libraries:commons:e1eb287c17'
+
     // Spigot dependencies
     compileOnly 'org.spigotmc:spigot-api:1.8.3-R0.1-SNAPSHOT'
 

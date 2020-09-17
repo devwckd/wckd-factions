@@ -2,9 +2,9 @@ package me.devwckd.factions.module;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import me.devwckd.lib.dependency.module.Module;
-import me.devwckd.lib.dependency.module.ModuleEnable;
 import me.devwckd.factions.FactionsPlugin;
+import me.devwckd.library.common.dependency.module.Module;
+import me.devwckd.library.common.dependency.module.ModuleEnable;
 
 import java.io.File;
 
